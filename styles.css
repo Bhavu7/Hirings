@@ -38,7 +38,6 @@ nav .nav-links ul li a {
     text-decoration: none;
     color: #000;
     align-items: center;
-    gap: 0.5vw;
     -webkit-transition: ease-in-out 0.3s;
     -moz-transition: ease-in-out 0.3s;
     -ms-transition: ease-in-out 0.3s;
@@ -246,10 +245,23 @@ nav .btns #signup {
     margin-bottom: 2vw;
 }
 
-.advice .advice-content .left-stats{
+.advice .advice-content .advice-stats {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.advice .advice-content .advice-stats .left-stat,
+.advice .advice-content .advice-stats .right-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.advice .advice-content .advice-stats ion-icon {
+    color: lime;
+    font-size: 1.5rem;
 }
 
 .advice .advice-card {
@@ -370,6 +382,6 @@ nav .btns #signup {
     border-radius: 50px;
 }
 
-.advice .advice-card .card .card-review .review-skeleton hr:nth-last-child(4){
+.advice .advice-card .card .card-review .review-skeleton hr:nth-last-child(4) {
     margin-bottom: 0;
 }
